@@ -11,11 +11,8 @@ function App() {
       <h1>{name}</h1>
       <ul>
         {list.map((a) => {
-          return (
-            <>
-              <li>{a}</li>
-            </>
-          );
+          return ()
+          
         })}
       </ul>
 

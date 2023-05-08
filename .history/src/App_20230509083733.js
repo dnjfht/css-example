@@ -10,12 +10,10 @@ function App() {
       <h2>{`Hello! ${name}`}</h2>
       <h1>{name}</h1>
       <ul>
-        {list.map((a) => {
-          return (
-            <>
-              <li>{a}</li>
-            </>
-          );
+        {list.map((a) => return {
+          <>
+            <li>{a}</li>
+          </>;
         })}
       </ul>
 
