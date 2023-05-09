@@ -13,7 +13,7 @@ export default function Profile({ image, name, job, isNew }) {
         boxShadow: "6px 6px 10px rgba(0,0,0,0.2)",
       }}
     >
-      <ProfileImgWrap image={image} isNew={isNew} />
+      <ProfileImgWrap image={image} isNew={true} />
       <h1>{name}</h1>
       <p>{job}</p>
     </div>
