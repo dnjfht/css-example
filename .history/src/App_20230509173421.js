@@ -3,7 +3,6 @@ import Profile from "./components/Profile";
 
 function App() {
   const handleClick = (event) => {
-    event.preventDefault();
     console.log(event);
     alert("버튼이 클릭됨!");
   };
@@ -17,13 +16,7 @@ function App() {
       }}
     >
       <button onClick={handleClick}>버튼</button>
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          console.log(event);
-          alert("입력한 내용이 들어옴!");
-        }}
-      >
+      <form onSubmit={() => {}}>
         <input type="text" placeholder="Write..." />
       </form>
       <Profile

@@ -20,8 +20,6 @@ function App() {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          console.log(event);
-          alert("입력한 내용이 들어옴!");
         }}
       >
         <input type="text" placeholder="Write..." />

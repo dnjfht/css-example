@@ -2,30 +2,14 @@ import "./App.css";
 import Profile from "./components/Profile";
 
 function App() {
-  const handleClick = (event) => {
-    event.preventDefault();
-    console.log(event);
-    alert("버튼이 클릭됨!");
-  };
-
   return (
     <div
       style={{
-        width: 300,
+        width: "1000px",
         margin: "0 auto",
-        textAlign: "center",
       }}
     >
-      <button onClick={handleClick}>버튼</button>
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          console.log(event);
-          alert("입력한 내용이 들어옴!");
-        }}
-      >
-        <input type="text" placeholder="Write..." />
-      </form>
+      <button>버튼</button>
       <Profile
         image="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
         name="James Kim"
