@@ -9,7 +9,6 @@ export default function App() {
   const handleMouseMove = (e) => {
     setMousePoint({ X: e.clientX, Y: e.clientY });
   };
-  console.log(mousePoint);
 
   return (
     <div
@@ -19,7 +18,6 @@ export default function App() {
       <div
         ref={pointRef}
         style={{
-          position: "absolute",
           left: mousePoint.X - 15 + "px",
           top: mousePoint.Y - 15 + "px",
           width: 20,

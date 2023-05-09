@@ -19,7 +19,6 @@ export default function App() {
       <div
         ref={pointRef}
         style={{
-          position: "absolute",
           left: mousePoint.X - 15 + "px",
           top: mousePoint.Y - 15 + "px",
           width: 20,

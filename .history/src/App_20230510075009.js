@@ -9,23 +9,17 @@ export default function App() {
   const handleMouseMove = (e) => {
     setMousePoint({ X: e.clientX, Y: e.clientY });
   };
-  console.log(mousePoint);
 
   return (
-    <div
-      onMouseMove={handleMouseMove}
-      style={{ width: "100%", height: "100vh", backgroundColor: "lightgray" }}
-    >
+    <div onMouseMove={handleMouseMove}>
       <div
         ref={pointRef}
         style={{
-          position: "absolute",
-          left: mousePoint.X - 15 + "px",
-          top: mousePoint.Y - 15 + "px",
-          width: 20,
-          height: 20,
-          borderRadius: 50,
-          backgroundColor: "red",
+          left: mousePoint.X - 15,
+          top: mousePoint.Y - 15,
+          width: 100,
+          height: 100,
+          backgroundColor: "yellow",
         }}
       />
     </div>
