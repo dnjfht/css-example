@@ -6,8 +6,7 @@ export default function App() {
 
   return (
     <div>
-      {showProducts && <Products />}
-      <button onClick={() => setShowProducts((prev) => !prev)}>Toggle</button>
+      <Products />
     </div>
   );
 }
