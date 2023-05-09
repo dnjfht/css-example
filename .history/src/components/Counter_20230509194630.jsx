@@ -27,7 +27,7 @@ export default function Counter({ total, handleClickTotal }) {
     >
       <p style={{ fontSize: 120 }}>
         {count}
-        <span style={{ fontSize: 20 }}>/ {total}</span>
+        <span style={{ fontSize: 10 }}>/ {total}</span>
       </p>
       <button
         style={{
