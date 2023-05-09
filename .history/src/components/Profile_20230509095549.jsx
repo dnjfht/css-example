@@ -36,7 +36,7 @@ export default function Profile({ image, name, job, isNew }) {
               fontSize: 16,
             }}
           >
-            NEW
+            {isNew}
           </h3>
         </div>
       ) : (

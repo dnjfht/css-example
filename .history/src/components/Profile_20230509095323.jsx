@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Profile({ image, name, job, isNew }) {
+export default function Profile({ image, name, job, state }) {
   return (
     <div
       style={{
@@ -12,7 +12,7 @@ export default function Profile({ image, name, job, isNew }) {
         boxShadow: "6px 6px 10px rgba(0,0,0,0.2)",
       }}
     >
-      {isNew ? (
+      {state ? (
         <div style={{ position: "relative" }}>
           <img
             style={{
@@ -36,7 +36,7 @@ export default function Profile({ image, name, job, isNew }) {
               fontSize: 16,
             }}
           >
-            NEW
+            {state}
           </h3>
         </div>
       ) : (
