@@ -12,9 +12,6 @@ export default function Products() {
         console.log("🔥 뜨끈한 데이터를 네트워크에서 받아옴");
         setProducts(data);
       });
-    return () => {
-      console.log("깨끗하게 청소하는 일들을 합니다.");
-    };
   }, []);
 
   return (
