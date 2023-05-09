@@ -3,14 +3,7 @@ import Profile from "./components/Profile";
 
 function App() {
   return (
-    <div
-      style={{
-        width: "1000px",
-        margin: "0 auto",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-    >
+    <div style={{ width: "100%", margin: "0 auto", display: "flex" }}>
       <Profile
         image="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
         name="James Kim"
