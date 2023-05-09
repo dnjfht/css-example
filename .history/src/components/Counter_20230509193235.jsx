@@ -8,9 +8,9 @@ export default function Counter({ total, handleClickTotal }) {
     handleClickTotal();
   };
 
-  //   const handleClickCountDown = () => {
-  //     if (count > 0) setCount(count - 1);
-  //   };
+  const handleClickCountDown = () => {
+    if (count > 0) setCount(count - 1);
+  };
 
   return (
     <div
@@ -44,7 +44,7 @@ export default function Counter({ total, handleClickTotal }) {
       >
         Add +
       </button>
-      {/* <button
+      <button
         style={{
           width: 130,
           padding: "6px 16px",
@@ -59,7 +59,7 @@ export default function Counter({ total, handleClickTotal }) {
         onClick={handleClickCountDown}
       >
         Add -
-      </button> */}
+      </button>
     </div>
   );
 }

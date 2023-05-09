@@ -18,7 +18,7 @@ export default function App() {
         }}
       >
         Total Count : {total}
-        <span>{total > 20 ? "🔥" : "💦"}</span>
+        <span>{total > 20 ? "🔥" : "❄"}</span>
       </p>
       <Counter total={total} handleClickTotal={handleClickTotal} />
       <Counter total={total} handleClickTotal={handleClickTotal} />
