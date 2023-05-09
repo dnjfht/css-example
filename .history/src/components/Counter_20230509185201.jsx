@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Counter({ count, setCount }) {
   const handleClickCountUp = () => {
-    setCount((prev) => prev + 1);
+    setCount(count + 1);
   };
 
   const handleClickCountDown = () => {
@@ -28,7 +28,7 @@ export default function Counter({ count, setCount }) {
           width: 130,
           padding: "6px 16px",
           boxSizing: "border-box",
-          backgroundColor: "orange",
+          backgroundColor: "gold",
           border: "2px solid #222",
           borderRadius: 8,
           fontSize: 30,
@@ -44,7 +44,7 @@ export default function Counter({ count, setCount }) {
           padding: "6px 16px",
           marginTop: 10,
           boxSizing: "border-box",
-          backgroundColor: "orange",
+          backgroundColor: "#ff2987",
           border: "2px solid #222",
           borderRadius: 8,
           fontSize: 30,
