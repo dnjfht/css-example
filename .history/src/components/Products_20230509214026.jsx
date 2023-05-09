@@ -10,8 +10,7 @@ export default function Products() {
 
   useEffect(() => {
     // fetch("http://localhost:3001/products")
-    // fetch("data/products.json")
-    fetch(`data/${checked ? "sale_" : ""}products.json`)
+    fetch("data/products.json")
       .then((res) => res.json())
       .then((data) => {
         console.log("🔥 뜨끈한 데이터를 네트워크에서 받아옴");
@@ -21,7 +20,6 @@ export default function Products() {
       console.log("깨끗하게 청소하는 일들을 합니다.");
     };
   }, [checked]);
-  // checked 값이 변경될 때마다 함수가 실행되도록.
 
   return (
     <div>
