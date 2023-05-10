@@ -29,4 +29,3 @@ export function DarkModeProvider({ children }) {
 // 우산(Context)을 만들려면
 // 1. React에서 제공해주는 createContext를 이용해서 Context를 만든다.
 // 2. 자식 컴포넌트들을 받아오는 컴포넌트를 만들어서 자식 컴포넌트들을 위에서 만든 Context에서 제공해주는 Provider로 감싸주면 됨.
-// 3. 자식 컴포넌트와 공유하고 싶은 데이터가 있다면 Provider value에 지정해주면 된다.
