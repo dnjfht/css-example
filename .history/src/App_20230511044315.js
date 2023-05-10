@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 
 export default function App() {
   const [person, setPerson] = useState({
@@ -61,6 +61,10 @@ export default function App() {
   // 이제 다시 무언가 업데이트 될 때 컴포넌트에서 동일한 객체를 사용하겠지만
   // 계속 새롭게 할당된 text가 만들어질 거임.
   // 그리고 props를 전달할 되면 매번 컴포넌트를 호출할 때마다 새로운 props라는 객체가 생성이 됨.
+
+  // 아무리 똑같은 값을 props로 전달을 해도 매번 새로운 객체가 만들어짐.
+  // 값이 전달될 때, 매번 새로운 객체가 만들어지더라도 안에 들어있는 값이 동일하다면 다시 리렌더링 하지마!라고 memo를 해줄 거임.
+
   return (
     <div>
       <h1>
@@ -83,14 +87,7 @@ export default function App() {
   );
 }
 
-// 아무리 똑같은 값을 props로 전달을 해도 매번 새로운 객체가 만들어짐.
-// 값이 전달될 때, 매번 새로운 객체가 만들어지더라도 안에 들어있는 값이 동일하다면 다시 리렌더링 하지마!라고 memo를 해줄 거임.
-
-// App component가 아무리 변경이 되어도
-// 콜백힘수를 useCallback으로 감싸줬고, Button 컴포넌트의 text가 변경되지 않는 이상
-// 항상 동일한 컴포넌트를 기억하고 있기 때문에 리렌더링이 발생 X
-
-const Button = memo(({ text, onClick }) => {
+const Button = useMemo(({ text, onClick }) => {
   console.log("Button", text, "re-rendering !!");
   const result = useMemo(() => calculateSomething(), []);
   // component 안에 뭔가 무거운 일을 하는데 첫 렌더링 때만 계산하면 된다면
