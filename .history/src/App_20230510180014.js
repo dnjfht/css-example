@@ -31,7 +31,7 @@ export default function App() {
 
     setPerson((person) => ({
       ...person,
-      mentors: [...person.mentors, newMentor],
+      mentors: newMentor,
     }));
   };
 

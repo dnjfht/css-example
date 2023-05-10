@@ -20,20 +20,7 @@ export default function App() {
     ],
   });
 
-  const ClickAddMentor = () => {
-    const currentName = prompt("추가하고 싶은 멘토의 이름은 무엇입니까?");
-    const currentJob = prompt("추가하고 싶은 멘토의 직업은 무엇입니까?");
-
-    const newMentor = {
-      name: currentName,
-      title: currentJob,
-    };
-
-    setPerson((person) => ({
-      ...person,
-      mentors: [...person.mentors, newMentor],
-    }));
-  };
+  const ClickAddMentor = () => {};
 
   const ClickDeleteMentor = () => {
     const prev = prompt("삭제할 멘토의 이름은 무엇입니까?");
@@ -41,7 +28,7 @@ export default function App() {
     setPerson((person) => ({
       ...person,
       mentors: person.mentors.filter((mentor) => {
-        return mentor.name !== prev;
+        mentor.name !== prev;
       }),
     }));
   };

@@ -26,12 +26,12 @@ export default function App() {
 
     const newMentor = {
       name: currentName,
-      title: currentJob,
+      title: currentTitle,
     };
 
     setPerson((person) => ({
       ...person,
-      mentors: [...person.mentors, newMentor],
+      mentors: newMentor,
     }));
   };
 
