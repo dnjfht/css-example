@@ -2,6 +2,6 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div style={{ width: "100%", backgroundColor: "blueviolet" }}>Header</div>
+    <div style={{ width: "100%", backgroundColor: "deepblue" }}>Header</div>
   );
 }

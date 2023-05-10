@@ -1,5 +1,6 @@
 import React from "react";
 import Profile2 from "./Profile2";
+import User from "./User";
 import Products2 from "./Products2";
 
 export default function Main() {
@@ -7,6 +8,7 @@ export default function Main() {
     <div>
       Main
       <Profile2 />
+      <User />
       <Products2 />
     </div>
   );
