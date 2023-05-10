@@ -31,7 +31,6 @@ export default function App() {
     updatePerson((person) => {
       const mentor = person.mentors.find((m) => m.name === prev);
       // find() 메서드는 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 반환
-      mentor.name = current;
     });
     // 실제로 객체 자체를 업데이트하는 것처럼 보이지만
     // 내부적으로는 새로운 person이라는 객체를 만들어서 업데이트하는 부분만 변경해주는 것.
@@ -40,19 +39,10 @@ export default function App() {
   const ClickAddMentor = () => {
     const currentName = prompt("추가하고 싶은 멘토의 이름은 무엇입니까?");
     const currentJob = prompt("추가하고 싶은 멘토의 직업은 무엇입니까?");
-
-    updatePerson((person) =>
-      person.mentors.push({ name: currentName, title: currentJob })
-    );
   };
 
   const ClickDeleteMentor = () => {
     const prev = prompt("삭제할 멘토의 이름은 무엇입니까?");
-
-    const index = person.mentors.findIndex((m) => m.name === prev);
-    person.mentors.splice(index, 1);
-    // index부터 1나만 삭제하고 나머지는 배열로 출력.
-    // 직접적으로 값을 수정하는 방식.
   };
 
   return (
@@ -70,7 +60,6 @@ export default function App() {
           );
         })}
       </ul>
-      <button onClick={handleUpdate}>멘토 이름 변경하기</button>
       <button onClick={ClickAddMentor}>멘토 추가하기</button>
       <button onClick={ClickDeleteMentor}>멘토 삭제하기</button>
     </div>

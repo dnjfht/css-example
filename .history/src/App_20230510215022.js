@@ -48,11 +48,6 @@ export default function App() {
 
   const ClickDeleteMentor = () => {
     const prev = prompt("삭제할 멘토의 이름은 무엇입니까?");
-
-    const index = person.mentors.findIndex((m) => m.name === prev);
-    person.mentors.splice(index, 1);
-    // index부터 1나만 삭제하고 나머지는 배열로 출력.
-    // 직접적으로 값을 수정하는 방식.
   };
 
   return (
@@ -70,7 +65,6 @@ export default function App() {
           );
         })}
       </ul>
-      <button onClick={handleUpdate}>멘토 이름 변경하기</button>
       <button onClick={ClickAddMentor}>멘토 추가하기</button>
       <button onClick={ClickDeleteMentor}>멘토 삭제하기</button>
     </div>

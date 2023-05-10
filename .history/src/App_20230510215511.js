@@ -70,7 +70,7 @@ export default function App() {
           );
         })}
       </ul>
-      <button onClick={handleUpdate}>멘토 이름 변경하기</button>
+      <button onClick={handleUpdate}>멘토 이름 바꾸기</button>
       <button onClick={ClickAddMentor}>멘토 추가하기</button>
       <button onClick={ClickDeleteMentor}>멘토 삭제하기</button>
     </div>
