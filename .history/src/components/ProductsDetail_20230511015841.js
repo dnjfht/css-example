@@ -6,11 +6,8 @@ export default function ProductsDetail() {
   return (
     <div>
       Product Detail
-      <p>
-        DarkMode : <span>{darkMode.toString()}</span>
-        {/* Boolean은 값이 출력되지 않으므로 문자열로 바꿔주기 */}
-      </p>
-      <button onClick={() => toggleDarkMode()}>Toggle</button>
+      <p>DarkMode :</p>
+      <button>Toggle</button>
     </div>
   );
 }

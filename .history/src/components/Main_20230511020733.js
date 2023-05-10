@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <>
       {darkMode === true ? (
-        <div style={{ backgroundColor: "rgba(0,0,0,0.9)", color: "white" }}>
+        <div>
           Main
           <Profile2 />
           <Products2 />
