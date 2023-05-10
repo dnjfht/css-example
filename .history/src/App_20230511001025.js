@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import ProfileImgWrap from "./components/ProfileImgWrap";
 
 export default function App() {
   return (
@@ -11,7 +10,6 @@ export default function App() {
           name="Bob"
           size={200}
         />
-        <p>안녕하세요!</p>
       </Navbar>
     </div>
   );

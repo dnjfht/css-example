@@ -11,7 +11,6 @@ export default function App() {
           name="Bob"
           size={200}
         />
-        <p>안녕하세요!</p>
       </Navbar>
     </div>
   );
