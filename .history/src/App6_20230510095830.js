@@ -1,23 +1,13 @@
 import React, { useState } from "react";
 
-export default function App() {
+export default function App6() {
   const [person, setPerson] = useState({
     name: "승민",
     title: "개발자",
-    mentors: [
-      {
-        name: "동동주",
-        title: "시니어개발자",
-      },
-      {
-        name: "제임스",
-        title: "시니어개발자",
-      },
-      {
-        name: "티나",
-        title: "시니어개발자",
-      },
-    ],
+    mentors: {
+      name: "동동주",
+      title: "시니어개발자",
+    },
   });
 
   const ClickMentorNameChange = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function App() {
+export default function App6() {
   const [person, setPerson] = useState({
     name: "승민",
     title: "개발자",
