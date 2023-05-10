@@ -35,27 +35,6 @@ export default function App() {
     }));
   };
 
-  const ClickAddMentor = () => {
-    const name = prompt("추가할 멘토의 이름은 무엇입니까?");
-    const title = prompt("추가할 멘토의 직함은 무엇입니까?");
-
-    setPerson((person) => ({
-      ...person,
-      mentors: [...person.mentors, { name, title }],
-    }));
-  };
-
-  const ClickDeleteMentor = () => {
-    const name = prompt("삭제할 멘토의 이름은 무엇입니까?");
-
-    setPerson((person) => ({
-      ...person,
-      mentors: person.mentors.filter((mentor) => {
-        return mentor.name !== name;
-      }),
-    }));
-  };
-
   return (
     <div>
       <h1>
@@ -71,18 +50,13 @@ export default function App() {
           );
         })}
       </ul>
-      <Button text="멘토 이름 바꾸기" onClick={ClickMentorNameChange} />
-      <Button text="멘토 추가하기" onClick={ClickAddMentor} />
-      <Button text="멘토 삭제하기" onClick={ClickDeleteMentor} />
+      <button onClick={ClickMentorNameChange}>멘토의 이름 바꾸기</button>
     </div>
   );
 }
 
 function Button({ text, onClick }) {
   console.log("Button", text, "re-rendering !!");
-  const result = calculateSomething();
-  // component 안에 뭔가 무거운 일을 하는데 첫 렌더링 때만 계산하면 된다면
-  // useEffect나 useMemo를 사용하면 된다.
 
   return (
     <button
@@ -94,14 +68,7 @@ function Button({ text, onClick }) {
         margin: "0.4rem",
       }}
     >
-      {`${text} ${result}`}
+      {text}
     </button>
   );
-}
-
-function calculateSomething() {
-  for (let i = 0; i < 10000; i++) {
-    console.log("💖💖💖");
-  }
-  return 10;
 }

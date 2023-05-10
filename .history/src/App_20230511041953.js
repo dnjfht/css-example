@@ -81,8 +81,6 @@ export default function App() {
 function Button({ text, onClick }) {
   console.log("Button", text, "re-rendering !!");
   const result = calculateSomething();
-  // component 안에 뭔가 무거운 일을 하는데 첫 렌더링 때만 계산하면 된다면
-  // useEffect나 useMemo를 사용하면 된다.
 
   return (
     <button
