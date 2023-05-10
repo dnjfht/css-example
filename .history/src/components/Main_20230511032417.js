@@ -7,10 +7,9 @@ export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
   return (
     <div
-      style={{
-        backgroundColor: darkMode ? "rgba(0,0,0,0.9)" : "white",
-        color: darkMode ? "white" : "black",
-      }}
+      style={
+        {darkMode ? {backgroundColor:"rgba(0,0,0,0.9)"} : {backgroundColor:"rgba(255,255,255,1)"}}
+      }
     >
       Main
       <Profile2 />

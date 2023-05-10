@@ -6,12 +6,7 @@ import { DarkModeContext } from "../DarkModeContext";
 export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div
-      style={{
-        backgroundColor: darkMode ? "rgba(0,0,0,0.9)" : "white",
-        color: darkMode ? "white" : "black",
-      }}
-    >
+    <div style={{}}>
       Main
       <Profile2 />
       <Products2 />

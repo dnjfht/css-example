@@ -8,8 +8,9 @@ export default function Main() {
   return (
     <div
       style={{
-        backgroundColor: darkMode ? "rgba(0,0,0,0.9)" : "white",
-        color: darkMode ? "white" : "black",
+        backgroundColor: `${
+          darkMode ? rgba(0, 0, 0, 0.9) : rgba(255, 255, 255, 1)
+        }`,
       }}
     >
       Main

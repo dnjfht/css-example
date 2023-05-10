@@ -9,7 +9,6 @@ export default function Main() {
     <div
       style={{
         backgroundColor: darkMode ? "rgba(0,0,0,0.9)" : "white",
-        color: darkMode ? "white" : "black",
       }}
     >
       Main
