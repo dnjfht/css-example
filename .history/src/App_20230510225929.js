@@ -11,8 +11,6 @@ export default function App() {
     setForm({ ...form, [name]: value });
     console.log(e);
   };
-  console.log(form);
-
   const handleSubmit = (e) => {
     e.preventDefault();
   };

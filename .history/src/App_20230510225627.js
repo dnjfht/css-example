@@ -9,13 +9,11 @@ export default function App() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    console.log(e);
   };
-  console.log(form);
-
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+  console.log(name, email);
 
   return (
     <div>
@@ -29,13 +27,7 @@ export default function App() {
           onChange={handleChange}
         />
         <label htmlFor="email">이메일 :</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-        />
+        <input type="email" id="email" name="email" onChange={handleChange} />
         <button>Submit</button>
       </form>
     </div>

@@ -24,7 +24,7 @@ export default function App() {
         <input
           type="text"
           id="name"
-          name="name"
+          name="nam"
           value={form.name}
           onChange={handleChange}
         />

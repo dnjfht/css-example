@@ -9,7 +9,6 @@ export default function App() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    console.log(e);
   };
   console.log(form);
 
@@ -33,7 +32,7 @@ export default function App() {
           type="email"
           id="email"
           name="email"
-          value={form.email}
+          value={form.emailllll}
           onChange={handleChange}
         />
         <button>Submit</button>
