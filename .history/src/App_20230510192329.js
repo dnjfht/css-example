@@ -1,5 +1,4 @@
 import React, { useReducer } from "react";
-import personReducer from "./reducer/person-reducer";
 
 export default function App() {
   // const [person, setPerson] = useState(initialState);

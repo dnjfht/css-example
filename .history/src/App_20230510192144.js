@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import personReducer from "./reducer/person-reducer";
 
 export default function App() {
@@ -38,7 +38,12 @@ export default function App() {
   const ClickDeleteMentor = () => {
     const prev = prompt("삭제할 멘토의 이름은 무엇입니까?");
 
-    dispatch({ type: "deleted", prev });
+    setPerson((person) => ({
+      ...person,
+      mentors: person.mentors.filter((mentor) => {
+        return mentor.name !== prev;
+      }),
+    }));
   };
 
   return (
