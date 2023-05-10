@@ -26,9 +26,9 @@ export default function App() {
 
     setPerson((person) => ({
       ...person,
-      mentors: person.mentors.map((mentor) => {
+      mentors: prev.mentors.map((mentor) => {
         if (mentor.name === prev) {
-          return { ...mentor, name: current };
+          return { ...prev, name: current };
         }
         return mentor;
       }),

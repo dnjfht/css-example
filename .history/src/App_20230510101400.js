@@ -28,7 +28,7 @@ export default function App() {
       ...person,
       mentors: person.mentors.map((mentor) => {
         if (mentor.name === prev) {
-          return { ...mentor, name: current };
+          return { ...prev, name: current };
         }
         return mentor;
       }),
