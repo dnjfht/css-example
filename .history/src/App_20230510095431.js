@@ -55,15 +55,6 @@ export default function App() {
         {person.name}은 {person.title}
       </h1>
       <p>{person.name}의 멘토는 :</p>
-      <ul>
-        {person.mentor.map((p, index) => {
-          return (
-            <li key={index}>
-              {p.name} ({p.title})
-            </li>
-          );
-        })}
-      </ul>
       <button onClick={ClickMentorNameChange}>멘토 이름 바꾸기</button>
       <button onClick={ClickMentorJobChange}>멘토 타이틀 바꾸기</button>
     </div>
