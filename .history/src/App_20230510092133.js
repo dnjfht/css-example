@@ -11,23 +11,7 @@ export default function App() {
   });
 
   const ClickMentorNameChange = () => {
-    const name = prompt("what's your mentor's name?");
-
-    const mentor = {
-      name: name,
-      title: person.mentor.title,
-    };
-    setPerson((prev) => ({ ...prev, mentor }));
-  };
-
-  const ClickMentorJobChange = () => {
-    const title = prompt("what's your mentor's title?");
-
-    const mentor = {
-      name: person.mentor.name,
-      title: title,
-    };
-    setPerson((prev) => ({ ...prev, mentor }));
+    setPerson((prev) => ({ ...prev, mentor: { name: "쀼로삥" } }));
   };
   return (
     <div>
@@ -38,7 +22,7 @@ export default function App() {
         {person.name}의 멘토는 {person.mentor.name} ({person.mentor.title})
       </p>
       <button onClick={ClickMentorNameChange}>멘토 이름 바꾸기</button>
-      <button onClick={ClickMentorJobChange}>멘토 타이틀 바꾸기</button>
+      <button>멘토 타이틀 바꾸기</button>
     </div>
   );
 }

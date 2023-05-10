@@ -22,12 +22,6 @@ export default function App() {
 
   const ClickMentorJobChange = () => {
     const title = prompt("what's your mentor's title?");
-
-    const mentor = {
-      name: person.mentor.name,
-      title: title,
-    };
-    setPerson((prev) => ({ ...prev, mentor }));
   };
   return (
     <div>

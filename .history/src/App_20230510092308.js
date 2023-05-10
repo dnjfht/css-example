@@ -11,23 +11,17 @@ export default function App() {
   });
 
   const ClickMentorNameChange = () => {
-    const name = prompt("what's your mentor's name?");
-
-    const mentor = {
-      name: name,
-      title: person.mentor.title,
-    };
-    setPerson((prev) => ({ ...prev, mentor }));
+    setPerson((prev) => ({
+      ...prev,
+      mentor: { name: "쀼로삥", title: "시니어개발자" },
+    }));
   };
 
   const ClickMentorJobChange = () => {
-    const title = prompt("what's your mentor's title?");
-
-    const mentor = {
-      name: person.mentor.name,
-      title: title,
-    };
-    setPerson((prev) => ({ ...prev, mentor }));
+    setPerson((prev) => ({
+      ...prev,
+      mentor: { name: "쀼로삥", title: "개발자" },
+    }));
   };
   return (
     <div>
