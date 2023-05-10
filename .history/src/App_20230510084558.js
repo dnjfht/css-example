@@ -5,10 +5,6 @@ export default function App() {
 
   const handleMouseMove = (e) => {
     setMousePoint({ X: e.clientX, Y: e.clientY });
-
-    // 만약 수평으로만 이동이 가능하다면? :
-    // setMousePoint((prev) => ({ ...prev, X: e.clientX }));
-    // setMousePoint({X : e.clientX, Y : prev.Y}); 이렇게 사용해도 됨.
   };
   console.log(mousePoint);
 
