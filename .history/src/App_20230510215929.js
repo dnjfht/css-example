@@ -42,19 +42,17 @@ export default function App() {
     const currentJob = prompt("추가하고 싶은 멘토의 직업은 무엇입니까?");
 
     updatePerson((person) => {
-      person.mentors.push({ name: currentName, title: currentJob });
+      return person.mentors.push({ name: currentName, title: currentJob });
     });
   };
 
   const ClickDeleteMentor = () => {
     const prev = prompt("삭제할 멘토의 이름은 무엇입니까?");
 
-    updatePerson((person) => {
-      const index = person.mentors.findIndex((m) => m.name === prev);
-      person.mentors.splice(index, 1);
-      // index부터 1나만 삭제하고 나머지는 배열로 출력.
-      // 직접적으로 값을 수정하는 방식.
-    });
+    const index = person.mentors.findIndex((m) => m.name === prev);
+    person.mentors.splice(index, 1);
+    // index부터 1나만 삭제하고 나머지는 배열로 출력.
+    // 직접적으로 값을 수정하는 방식.
   };
 
   return (
