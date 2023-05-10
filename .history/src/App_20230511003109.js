@@ -1,0 +1,19 @@
+import React from "react";
+import Navbar from "./components/Navbar";
+import ProfileImgWrap from "./components/ProfileImgWrap";
+import Card from "./components/Card";
+
+export default function App() {
+  return (
+    <div>
+      <Card>
+        <ProfileImgWrap
+          image="https://plus.unsplash.com/premium_photo-1664870883044-0d82e3d63d99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          name="Bob"
+          size={200}
+        />
+        <p>안녕하세요!</p>
+      </Card>
+    </div>
+  );
+}
