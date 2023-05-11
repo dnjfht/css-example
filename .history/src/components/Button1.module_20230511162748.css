@@ -1,0 +1,5 @@
+.button {
+  background-color: aquamarine;
+}
+
+/* 이렇게 PostCSS를 사용하면 class 이름이 충돌나는 것을 신경쓰지 않아도 된다.*/
