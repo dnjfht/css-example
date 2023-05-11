@@ -5,9 +5,7 @@ import React from "react";
 export default class App extends React.Component {
   state = { count: 0 };
 
-  onClick = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+  onClick = () => {};
 
   componentDidMount() {
     console.log("컴포넌트가 마운트 되었음!");
