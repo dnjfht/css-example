@@ -1,3 +1,5 @@
+import Counter2 from "./components/Counter2";
+
 // class component 살펴보기
 
 import React from "react";
@@ -32,7 +34,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-// 함수형 컴포넌트는 렌더링이 될 때마다 함수 전체가 호출이 되는데
-// 클래스형 컴포넌트는 멤버 함수로 정의되어 있기 때문에 상태가 변경될 때마다 렌더 함수만 호출이 된다
-// 기존의 멤버 함수는 그대로 유지되기 때문에 useCallback이나 useMemo 같은 별도의 처리를 하지 않아도 된다
