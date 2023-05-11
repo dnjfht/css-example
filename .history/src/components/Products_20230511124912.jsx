@@ -13,9 +13,9 @@ export default function Products() {
   useEffect(() => {
     setLoading(true);
     setError(undefined);
-    // fetch("http://localhost:3001/products")
-    // fetch("data/products.json")
-    fetch(`data/${checked ? "sale_" : ""}products.json`)
+    fetch("http://localhost:3001/products")
+      // fetch("data/products.json")
+      //fetch(`data/${checked ? "sale_" : ""}products.json`)
       .then((res) => res.json())
       .then((data) => {
         console.log("🔥 뜨끈한 데이터를 네트워크에서 받아옴");

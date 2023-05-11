@@ -21,18 +21,13 @@ export default function Products() {
         console.log("🔥 뜨끈한 데이터를 네트워크에서 받아옴");
         setProducts(data);
       })
-      .catch((err) => setError("에러가 발생했습니다!"))
-      .finally(() => setLoading(false));
+      .catch((err) => setError(err));
     return () => {
       console.log("깨끗하게 청소하는 일들을 합니다.");
     };
   }, [checked]);
   // checked 값이 변경될 때마다 함수가 실행되도록.
 
-  if (loading) return <p>Loading...</p>;
-  // loading 중이면 Loading 문구를
-  if (error) return <p>{error}</p>;
-  // error가 떴으면 error 문구를
   return (
     <div>
       <input

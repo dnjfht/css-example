@@ -29,10 +29,6 @@ export default function Products() {
   }, [checked]);
   // checked 값이 변경될 때마다 함수가 실행되도록.
 
-  if (loading) return <p>Loading...</p>;
-  // loading 중이면 Loading 문구를
-  if (error) return <p>{error}</p>;
-  // error가 떴으면 error 문구를
   return (
     <div>
       <input
