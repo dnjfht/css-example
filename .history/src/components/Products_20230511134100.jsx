@@ -4,7 +4,7 @@ import useProducts from "../hooks/use-products";
 export default function Products() {
   const [checked, setChecked] = useState(false);
   const [loading, error, products] = useProducts({ salesOnly: checked });
-  // salesOnly인지 아닌지를 checked라는 상태값으로 전달해줄 것임.
+  // salesOnly인지 아닌지를 checked라는 상태값으로
 
   const handleChange = () => {
     setChecked((prev) => !prev);
