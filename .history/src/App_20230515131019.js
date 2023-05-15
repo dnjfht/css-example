@@ -29,8 +29,7 @@ export default function App() {
       <Button2 />
 
       <Container>
-        <Button>Normal Button</Button>
-        <Button primary>Primary Button</Button>
+        <Button>버튼인데요?</Button>
       </Container>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import Button1 from "./components/Button1";
 import Button2 from "./components/Button2";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
@@ -29,8 +29,7 @@ export default function App() {
       <Button2 />
 
       <Container>
-        <Button>Normal Button</Button>
-        <Button primary>Primary Button</Button>
+        <Button>버튼인데요?</Button>
       </Container>
     </>
   );
